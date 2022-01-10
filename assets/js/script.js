@@ -1,18 +1,36 @@
 var currentNumberWrapper = document.getElementById('currentNumber');
+var btnAdd = document.getElementById('add')
+var btnSub = document.getElementById('sub')
 var currentNumber = 0;
 
-function increment() {
+//modificando cor quando numero for negativo
+function changeColor() {
+    currentNumber >= 0 ? currentNumberWrapper.style.color = '#000' : currentNumberWrapper.style.color = '#f00' 
+}
+
+//Utilizando addEventListener
+btnAdd.addEventListener('click', () => {    
     currentNumber++;
+    changeColor()      
     currentNumberWrapper.innerHTML = currentNumber;
-}
+})
 
-function decrement() {
-    currentNumber--;
+btnSub.addEventListener('click', () => {
+    currentNumber--
+    changeColor()        
     currentNumberWrapper.innerHTML = currentNumber;
-    //modificando cor quando numero for negativo
+})
+
+// function increment() {
+//     currentNumber++;
+//     currentNumberWrapper.innerHTML = currentNumber;
+// }
+
+// function decrement() {
+//     currentNumber--;
+//     currentNumberWrapper.innerHTML = currentNumber;
     
-}
+// }
 
-//addEventListener
+
 //Crie condicionais que desabilitam os botoes entre 0 e 10
-//Mude a cor do texto para vermelho quando o numero for negativo
