@@ -10,15 +10,16 @@ function changeColor() {
 
 //Utilizando addEventListener
 btnAdd.addEventListener('click', () => {    
-    currentNumber++;
-    changeColor()      
-    currentNumberWrapper.innerHTML = currentNumber;
+        currentNumber++;
+        changeColor();
+        currentNumberWrapper.innerHTML = currentNumber;   
+    
 })
 
-btnSub.addEventListener('click', () => {
-    currentNumber--
-    changeColor()        
-    currentNumberWrapper.innerHTML = currentNumber;
+btnSub.addEventListener('click', () => {    
+        currentNumber--;
+        changeColor();
+        currentNumberWrapper.innerHTML = currentNumber;   
 })
 
 // function increment() {
@@ -31,6 +32,3 @@ btnSub.addEventListener('click', () => {
 //     currentNumberWrapper.innerHTML = currentNumber;
     
 // }
-
-
-//Crie condicionais que desabilitam os botoes entre 0 e 10
