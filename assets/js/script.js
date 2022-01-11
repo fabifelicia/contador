@@ -21,14 +21,3 @@ btnSub.addEventListener('click', () => {
         changeColor();
         currentNumberWrapper.innerHTML = currentNumber;   
 })
-
-// function increment() {
-//     currentNumber++;
-//     currentNumberWrapper.innerHTML = currentNumber;
-// }
-
-// function decrement() {
-//     currentNumber--;
-//     currentNumberWrapper.innerHTML = currentNumber;
-    
-// }
